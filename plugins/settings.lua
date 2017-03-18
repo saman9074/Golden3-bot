@@ -246,6 +246,29 @@ local function run(msg, matches)
                         end
                     end
                     return
+						
+			--myEdit
+		    elseif matches[2] == 'english' then
+                    if matches[3] == 'enable' then
+                        hash = 'english:'..msg.to.id
+                        redis:del(hash)
+                        if msg.to.type == 'chat' then
+                            send_msg('chat#id'..msg.to.id, 'ℹ️ '..lang_text(msg.to.id, 'EnglishT'), ok_cb, false)
+                        elseif msg.to.type == 'channel' then
+                            send_msg('channel#id'..msg.to.id, 'ℹ️ '..lang_text(msg.to.id, 'EnglishL'), ok_cb, false)
+                        end
+                    elseif matches[3] == 'disable' then
+                        hash = 'english:'..msg.to.id
+                        redis:set(hash, true)
+                        if msg.to.type == 'chat' then
+                            send_msg('chat#id'..msg.to.id, 'ℹ️ '..lang_text(msg.to.id, 'noEnglishT'), ok_cb, false)
+                        elseif msg.to.type == 'channel' then
+                            send_msg('channel#id'..msg.to.id, 'ℹ️ '..lang_text(msg.to.id, 'noEnglishL'), ok_cb, false)
+                        end
+                    end
+                    return		
+			--myEdit
+						
                 elseif matches[2] == 'audios' then
                     if matches[3] == 'enable' then
                         hash = 'audio:'..msg.to.id
@@ -442,6 +465,19 @@ local function run(msg, matches)
                     sArabeD = '🔹'
                 end
                 text = text..sArabeD..' '..lang_text(msg.to.id, 'arabic')..': '..sArabe..'\n'
+		
+		--myEdit
+		--Enable/disable english messages
+                local hash = 'english:'..msg.to.id
+                if not redis:get(hash) then
+                    sene = allowed
+                    seneD = '🔸'              
+                else
+                    sene = noAllowed
+                    seneD = '🔹'
+                end
+                text = text..sArabeD..' '..lang_text(msg.to.id, 'arabic')..': '..sArabe..'\n'		
+		--myEdit
 
                 --Enable/disable bots
                 local hash = 'antibot:'..msg.to.id

@@ -244,7 +244,8 @@ function create_config( )
       "italian_lang",
       "portuguese_lang",
       "arabic",
-      "english"
+      "english",
+      "translate"
      },
     sudo_users = {122630959,0,tonumber(our_id)},
     admin_users = {},

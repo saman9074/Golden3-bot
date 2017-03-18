@@ -69,12 +69,12 @@ local function run(msg, matches)
 		set_text(LANG, 'arabicL', 'Arabic is now allowed in this supergroup.')
 		set_text(LANG, 'noArabicT', 'Arabic is not allowed in this chat.')
 		set_text(LANG, 'noArabicL', 'Arabic is not allowed in this supergroup.')
-		
+				
 		set_text(LANG, 'noEnglishT', 'در این گروه شما نمیتوانید با زبان انگلیسی صحبت کنید.')
         	set_text(LANG, 'noEnglishL', 'در این سوپر گروه شما نمیتوانید با زبان انگلیسی صحبت کنید.')
-        	set_text(LANG, 'EnglishT', 'از این به بعد استفاده از زبان انگلیسی در این گروه آزاد است.')
+        	set_text(LANG, 'EnglishT', 'از این به بعد استفاده از زبان انگلیسی در این گروه آزاد است.')		
 		set_text(LANG, 'EnglishL', 'از این به بعد استفاده از زبان انگلیسی در این سوپر گروه آزاد است.')
-
+		
 		set_text(LANG, 'audiosT', 'Audios are now allowed in this chat.')
 		set_text(LANG, 'audiosL', 'Audios are now allowed in this supergroup.')
 		set_text(LANG, 'noAudiosT', 'Audios are not allowed in this chat.')

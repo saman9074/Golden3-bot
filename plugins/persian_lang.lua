@@ -131,7 +131,7 @@ local function run(msg, matches)
         set_text(LANG, 'notChannelSetphoto', 'Now you can\'t setphoto in this channel.')
         set_text(LANG, 'setPhotoError', 'Please, enable setphoto settings.')
 
-        set_text(LANG, 'linkSaved', 'لینک جدید با موفقیت ذخیره شد')
+        set_text(LANG, 'linkSaved', 'لینک جدید با موفقیت ایجاد شد')
         set_text(LANG, 'groupLink', 'لینک گروه :')
         set_text(LANG, 'sGroupLink', 'لینک سوپرگروه :')
         set_text(LANG, 'noLinkSet', 'هیچ لینکی تنظیم نشده است. لطفا با دستور #setlink [link] لینک جدیدی بسازید.')

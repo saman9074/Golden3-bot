@@ -658,6 +658,7 @@ local function run(msg, matches)
         else
             return '🚫 '..lang_text(msg.to.id, 'require_mod')
         end
+--[[		
     elseif matches[1] == 'setlink' then
         if permissions(msg.from.id, msg.to.id, "setlink") then
             hash = 'link:'..msg.to.id
@@ -671,6 +672,35 @@ local function run(msg, matches)
         else
             return '🚫 '..lang_text(msg.to.id, 'require_admin')
         end
+--]]	
+			--myEdit
+	elseif matches[1] == 'setlink' then
+        if permissions(msg.from.id, msg.to.id, "setlink") then
+            hash = 'link:'..msg.to.id
+--------------------------------------------------------------------------------
+	local function callback (extra , success, result)
+        local receiver = 'chat#'..msg.to.id
+        if success == 0 then
+           return send_large_msg(receiver, '*Error: Invite link failed* \nReason: Not creator.')
+        end
+        data[tostring(msg.to.id)]['settings']['set_link'] = result
+        redis:set(hash, data)
+      end
+      local receiver = 'chat#'..msg.to.id
+      savelog(msg.to.id, name_log.." ["..msg.from.id.."] revoked group link ")
+return export_chat_link(receiver, callback, true)
+-----------------------------------------------------------------------------------
+            
+            if msg.to.type == 'chat' then
+                send_msg('chat#id'..msg.to.id, 'ℹ️ '..lang_text(msg.to.id, 'linkSaved'), ok_cb, true)
+            elseif msg.to.type == 'channel' then
+                send_msg('channel#id'..msg.to.id, 'ℹ️ '..lang_text(msg.to.id, 'linkSaved'), ok_cb, true)
+            end
+            return
+        else
+            return '🚫 '..lang_text(msg.to.id, 'require_admin')
+        end
+			--myEdit
     elseif matches[1] == 'link' then
         if permissions(msg.from.id, msg.to.id, "link") then
             hash = 'link:'..msg.to.id

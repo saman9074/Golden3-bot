@@ -127,7 +127,7 @@ local function run(msg, matches)
 		set_text(LANG, 'notChannelSetphoto', 'Now you can\'t setphoto in this channel.')
 		set_text(LANG, 'setPhotoError', 'Please, enable setphoto settings.')
 
-		set_text(LANG, 'linkSaved', 'New link saved.')
+		set_text(LANG, 'linkSaved', 'New link created.')
 		set_text(LANG, 'groupLink', 'Group Link')
 		set_text(LANG, 'sGroupLink', 'SuperGroup Link')
 		set_text(LANG, 'noLinkSet', 'There is not link set yet. Please add one by #setlink [Link].')

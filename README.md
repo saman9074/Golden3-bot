@@ -1,4 +1,4 @@
-Xamarin Plus (Zamarin Plus)
+golden3 
 ============
 
 :zap: Advanced Anti Spam and Super Group Manager Bot For Telegram
@@ -145,6 +145,8 @@ Bot Commands
             <td>#settings stickers enable/disable: when enabled, all stickers will be cleared.<br>
                 #settings links enable/disable: when enabled, all links will be cleared.<br>
                 #settings arabic enable/disable: when enabled, all messages with arabic/persian will be cleared.<br>
+                #settings english enable/disable: when enabled, all messages with english will be cleared.<br>
+                #settings bdw enable/disable: when enabled, all messages with Bad Worlds will be cleared.<br>
                 #settings bots enable/disable: when enabled, if someone adds a bot, it will be kicked.<br>
                 #settings gifs enable/disable: when enabled, all gifs will be cleared.<br>
                 #settings photos enable/disable: when enabled, all photos will be cleared.<br>
@@ -188,7 +190,7 @@ sudo apt-get install libreadline-dev libconfig-dev libssl-dev lua5.2 liblua5.2-d
 ```bash
 # After those dependencies, lets install the bot
 cd $HOME
-git clone https://github.com/amirhmz/XamarinPlus.git
+git clone https://github.com/saman9074/XamarinPlus.git
 cd XamarinPlus
 git clone --recursive https://github.com/Josepdal/tg.git
 chmod +x ./launch.sh
@@ -201,7 +203,7 @@ Then, you have to install a bot language like this:
 #lang en
 ```
 
-Xamarin Plus Developers
+Golden3 bot Developers
 -----------------
 
 [![https://telegram.me/AmirDark](https://img.shields.io/badge/%F0%9F%92%AC_Telegram-Amir%20Dark-blue.svg)](https://telegram.me/AmirDark) [![https://telegram.me/ShahabDark](https://img.shields.io/badge/%F0%9F%92%AC_Telegram-Shahab%20Dark-blue.svg)](https://telegram.me/ShahabDark)

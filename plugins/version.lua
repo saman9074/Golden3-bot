@@ -8,15 +8,13 @@
 do
 
 function run(msg, matches)
-  return '⚡️ Xamarin Plus Bot v1.0\n    \n  📢 Channel : @DarkTeam\n  👤 Admin : @AmirDark\n  \n  🙏 Special Thanks to :\n  \n        @PokerFace_Dev\n        @ShahabDark\n        @MR_Flat\n        @Sinaw1\n  \n Checkout yeo.ir/XamarinPlus\n' 
+  return '⚡️ Golden3 Bot v1.1\n    \n  📢 Channel : @golden3_ir\n  👤 Admin : @golden3_ir_admin\n \n' 
 end
 
 return {
   patterns = {
-    "^[!#/]xamarinplus$",
-    "^xamarinplus$",
-    "^[!#/]xamarin$",
-    "^xamarin$",
+    "^[!#/]golden3$",
+    "^golden3bot$",
     "^[!#/]version$",
     "^version$"
   }, 

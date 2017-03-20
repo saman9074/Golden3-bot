@@ -267,6 +267,28 @@ local function run(msg, matches)
                         end
                     end
                     return		
+						
+-----------------------------------------------bad world
+		  elseif matches[2] == 'bdw' then
+                    if matches[3] == 'enable' then
+                        hash = 'Swearing:'..msg.to.id
+                        redis:del(hash)
+                        if msg.to.type == 'chat' then
+                            send_msg('chat#id'..msg.to.id, 'ℹ️ '..lang_text(msg.to.id, 'SwearingT'), ok_cb, false)
+                        elseif msg.to.type == 'channel' then
+                            send_msg('channel#id'..msg.to.id, 'ℹ️ '..lang_text(msg.to.id, 'SwearingL'), ok_cb, false)
+                        end
+                    elseif matches[3] == 'disable' then
+                        hash = 'Swearing:'..msg.to.id
+                        redis:set(hash, true)
+                        if msg.to.type == 'chat' then
+                            send_msg('chat#id'..msg.to.id, 'ℹ️ '..lang_text(msg.to.id, 'noSwearingT'), ok_cb, false)
+                        elseif msg.to.type == 'channel' then
+                            send_msg('channel#id'..msg.to.id, 'ℹ️ '..lang_text(msg.to.id, 'noSwearingL'), ok_cb, false)
+                        end
+                    end
+                    return			
+-----------------------------------------------						
 			--myEdit
 						
                 elseif matches[2] == 'audios' then
@@ -476,7 +498,21 @@ local function run(msg, matches)
                     sene = noAllowed
                     seneD = '🔹'
                 end
-                text = text..sArabeD..' '..lang_text(msg.to.id, 'arabic')..': '..sArabe..'\n'		
+                text = text..seneD..' '..lang_text(msg.to.id, 'english')..': '..sene..'\n'
+		----
+		--Enable/disable Swearing messages
+                local hash = 'Swearing:'..msg.to.id
+                if not redis:get(hash) then
+                    sbdw = allowed
+                    sbdwD = '🔸'              
+                else
+                    sbdw = noAllowed
+                    sbdwD = '🔹'
+                end
+                text = text..sbdwD..' '..lang_text(msg.to.id, 'Swearing')..': '..sbdw..'\n'			
+		----					
+					
+					
 		--myEdit
 
                 --Enable/disable bots

@@ -190,8 +190,8 @@ sudo apt-get install libreadline-dev libconfig-dev libssl-dev lua5.2 liblua5.2-d
 ```bash
 # After those dependencies, lets install the bot
 cd $HOME
-git clone https://github.com/saman9074/XamarinPlus.git
-cd XamarinPlus
+git clone https://github.com/saman9074/Golden3-bot.git
+cd Golden3-bot
 git clone --recursive https://github.com/Josepdal/tg.git
 chmod +x ./launch.sh
 ./launch.sh install

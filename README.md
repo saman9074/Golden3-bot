@@ -206,5 +206,5 @@ Then, you have to install a bot language like this:
 Golden3 bot Developers
 -----------------
 
-[![https://telegram.me/Golden3_ir_admin](https://img.shields.io/badge/%F0%9F%92%AC_Telegram-Amir%20Dark-blue.svg)](https://telegram.me/golden3_ir_admin)
+[![https://telegram.me/Golden3_ir_admin](https://img.shields.io/badge/%F0%9F%92%AC_Telegram-ali%20abdi-blue.svg)](https://telegram.me/golden3_ir_admin)
 

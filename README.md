@@ -206,13 +206,5 @@ Then, you have to install a bot language like this:
 Golden3 bot Developers
 -----------------
 
-[![https://telegram.me/AmirDark](https://img.shields.io/badge/%F0%9F%92%AC_Telegram-Amir%20Dark-blue.svg)](https://telegram.me/AmirDark) [![https://telegram.me/ShahabDark](https://img.shields.io/badge/%F0%9F%92%AC_Telegram-Shahab%20Dark-blue.svg)](https://telegram.me/ShahabDark)
+[![https://telegram.me/Golden3_ir_admin](https://img.shields.io/badge/%F0%9F%92%AC_Telegram-Amir%20Dark-blue.svg)](https://telegram.me/golden3_ir_admin)
 
-Xamarin Plus Support Channel
------------------------
-
-[![https://telegram.me/DarkTeam](https://img.shields.io/badge/%F0%9F%92%AC_Telegram-Dark%20Team-blue.svg)](https://telegram.me/DarkTeam)
-
-Contact us
-------------
-You can contact us in groups said before but if you have an issue please [open](https://github.com/amirhmz/XamarinPlus/issues) one.

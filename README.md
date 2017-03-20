@@ -145,9 +145,9 @@ Bot Commands
             <td>#settings stickers enable/disable: when enabled, all stickers will be cleared.<br>
                 #settings links enable/disable: when enabled, all links will be cleared.<br>
                 #settings arabic enable/disable: when enabled, all messages with arabic/persian will be cleared.<br>
-                #settings english enable/disable: when enabled, all messages with english will be cleared.<br>
-                #settings bdw enable/disable: when enabled, all messages with Bad Worlds will be cleared.<br>
-                #settings bots enable/disable: when enabled, if someone adds a bot, it will be kicked.<br>
+                #settings english enable/disable: when enabled, all messages with english will be cleared. <span style="color:#F00;font-style: italic;font-weight:bold;"> (NEW)</span><br>
+                #settings bdw enable/disable: when enabled, all messages with Bad Worlds will be cleared. <span style="color:#F00;font-style: italic;font-weight:bold;">(NEW)</span><br>
+                #settings bots enable/disable: when enabled, if someone adds a bot, it will be kicked. <span style="color:#F00;font-style: italic;font-weight:bold;">(NEW)</span><br>
                 #settings gifs enable/disable: when enabled, all gifs will be cleared.<br>
                 #settings photos enable/disable: when enabled, all photos will be cleared.<br>
                 #settings audios enable/disable: when enabled, all audios will be cleared.<br>
